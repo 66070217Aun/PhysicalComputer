@@ -1,4 +1,6 @@
 a.exe
 HelloWorld.c
-*.exe
+/*/.exe
 .vscode
+**/*.exe
+
