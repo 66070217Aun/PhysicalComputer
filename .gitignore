@@ -3,4 +3,5 @@ HelloWorld.c
 /*/.exe
 .vscode
 **/*.exe
+*.out
 
