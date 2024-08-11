@@ -3,28 +3,19 @@
 #include <ctype.h>
 #include <stdbool.h>
 
-bool alreadyIn(char list[], int size, char find) {
-    for (int j = 0; j < size; j++) {
-        if (list[j] == find) {
-            return true;
-        }
-    }
-    return false;
-}
-
 int main() {
     int number, new = 0;
     scanf("%d\n", &number);
 
     int count[26] = {0};
-    char alphabet[number];
+    char alphabet[26];
     
     char current;
     for (int i = 0; i < number; i++) {
         scanf("\n%c", &current);
         current = tolower(current);
 
-        if (!alreadyIn(alphabet, new, current)) {
+        if (count[current % 26] <= 0) {
             alphabet[new] = current;
             new-=-1;
         }
