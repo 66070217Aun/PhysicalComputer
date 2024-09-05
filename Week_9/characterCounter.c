@@ -28,5 +28,6 @@ int main()
 
     printf("Lowercase letters: %d\nUppercase letters: %d\nDigits: %d", lower, upper, digit);
 
+    free(word);
     return 0;
 }

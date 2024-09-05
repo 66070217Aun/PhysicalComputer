@@ -41,5 +41,6 @@ int main()
 
     printf("%s", array);
 
+    free(array);
     return 0;
 }

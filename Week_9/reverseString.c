@@ -24,5 +24,6 @@ int main()
 
     printf("%s", word);
 
+    free(word);
     return 0;
 }
